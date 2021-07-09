@@ -31,10 +31,7 @@ public class ifrmCliente extends javax.swing.JInternalFrame {
      */
     public ifrmCliente() {
         initComponents();
-        JInternalFrame frame = new JInternalFrame("frame", false, false, false, false);
-frame.putClientProperty("JInternalFrame.isPalette", Boolean.TRUE);
-frame.getRootPane().setWindowDecorationStyle(JRootPane.NONE);
-    buscarCliente();
+        buscarCliente();
    
     }
 
@@ -121,19 +118,19 @@ frame.getRootPane().setWindowDecorationStyle(JRootPane.NONE);
         jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("NIT");
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, -1, -1));
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, -1, -1));
 
         txtNIT.setBackground(new java.awt.Color(0, 51, 102));
         txtNIT.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         txtNIT.setForeground(new java.awt.Color(255, 255, 255));
         txtNIT.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         txtNIT.setSelectionColor(new java.awt.Color(102, 102, 102));
-        jPanel3.add(txtNIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 200, 30));
+        jPanel3.add(txtNIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 200, 30));
 
         jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("DUI");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, -1, -1));
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
 
         txtDUI.setBackground(new java.awt.Color(0, 51, 102));
         txtDUI.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
@@ -145,7 +142,7 @@ frame.getRootPane().setWindowDecorationStyle(JRootPane.NONE);
                 txtDUIKeyReleased(evt);
             }
         });
-        jPanel3.add(txtDUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 160, 30));
+        jPanel3.add(txtDUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 160, 30));
 
         txtDireccion.setBackground(new java.awt.Color(0, 51, 102));
         txtDireccion.setColumns(20);
@@ -155,14 +152,14 @@ frame.getRootPane().setWindowDecorationStyle(JRootPane.NONE);
         txtDireccion.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         TxtDireccion.setViewportView(txtDireccion);
 
-        jPanel3.add(TxtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, 390, 110));
+        jPanel3.add(TxtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 390, 110));
 
         txtTelefono.setBackground(new java.awt.Color(0, 51, 102));
         txtTelefono.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         txtTelefono.setForeground(new java.awt.Color(255, 255, 255));
         txtTelefono.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         txtTelefono.setSelectionColor(new java.awt.Color(102, 102, 102));
-        jPanel3.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 160, 30));
+        jPanel3.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 160, 30));
 
         btnGuardar.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
@@ -176,7 +173,7 @@ frame.getRootPane().setWindowDecorationStyle(JRootPane.NONE);
                 btnGuardarActionPerformed(evt);
             }
         });
-        jPanel3.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 610, 160, 70));
+        jPanel3.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 500, 160, 70));
 
         btnLimpiar.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
@@ -190,7 +187,7 @@ frame.getRootPane().setWindowDecorationStyle(JRootPane.NONE);
                 btnLimpiarActionPerformed(evt);
             }
         });
-        jPanel3.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 680, 160, 70));
+        jPanel3.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 570, 160, 70));
 
         btnEliminar.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
@@ -204,24 +201,24 @@ frame.getRootPane().setWindowDecorationStyle(JRootPane.NONE);
                 btnEliminarActionPerformed(evt);
             }
         });
-        jPanel3.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 680, 160, 70));
+        jPanel3.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 570, 160, 70));
 
         jLabel9.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Dirección");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 380, -1, -1));
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, -1, -1));
 
         chkEstado.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         chkEstado.setForeground(new java.awt.Color(255, 255, 255));
         chkEstado.setSelected(true);
         chkEstado.setText("Activo");
         chkEstado.setContentAreaFilled(false);
-        jPanel3.add(chkEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 70, -1));
+        jPanel3.add(chkEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 70, -1));
 
         jLabel10.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Teléfono");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, -1, -1));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, -1, -1));
 
         btnEditar.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         btnEditar.setForeground(new java.awt.Color(255, 255, 255));
@@ -235,7 +232,7 @@ frame.getRootPane().setWindowDecorationStyle(JRootPane.NONE);
                 btnEditarActionPerformed(evt);
             }
         });
-        jPanel3.add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 610, 160, 70));
+        jPanel3.add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 500, 160, 70));
 
         jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
