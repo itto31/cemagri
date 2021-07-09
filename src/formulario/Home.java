@@ -5,11 +5,9 @@
  */
 package formulario;
 
-import java.awt.Button;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JDesktopPane;
 import javax.swing.JInternalFrame;
 import javax.swing.JLabel;
@@ -104,17 +102,17 @@ public class Home extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         Menu = new javax.swing.JPanel();
         MenuIconos = new javax.swing.JPanel();
-        pnLogo = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        espacio = new javax.swing.JPanel();
-        PnOcultarMenu = new javax.swing.JPanel();
-        btnOcultar = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         pnSeleccion1 = new javax.swing.JPanel();
         pnSeleccion2 = new javax.swing.JPanel();
         pnSeleccion3 = new javax.swing.JPanel();
+        BtnVenta = new javax.swing.JButton();
         BtnProducto = new javax.swing.JButton();
         BtnCliente = new javax.swing.JButton();
-        BtnVenta = new javax.swing.JButton();
+        PnOcultarMenu = new javax.swing.JPanel();
+        btnOcultar = new javax.swing.JLabel();
+        pnLogo = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
         Padre = new javax.swing.JPanel();
         escritorio = new javax.swing.JDesktopPane();
 
@@ -219,54 +217,10 @@ public class Home extends javax.swing.JFrame {
 
         MenuIconos.setBackground(new java.awt.Color(255, 197, 45));
         MenuIconos.setPreferredSize(new java.awt.Dimension(300, 480));
-        MenuIconos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        MenuIconos.setLayout(new java.awt.BorderLayout());
 
-        pnLogo.setBackground(new java.awt.Color(255, 197, 45));
-        pnLogo.setPreferredSize(new java.awt.Dimension(50, 50));
-        pnLogo.setLayout(new java.awt.BorderLayout());
-
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/logo-blanco.png"))); // NOI18N
-        pnLogo.add(jLabel6, java.awt.BorderLayout.CENTER);
-
-        MenuIconos.add(pnLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 720, 130, 90));
-
-        espacio.setBackground(new java.awt.Color(255, 197, 45));
-
-        javax.swing.GroupLayout espacioLayout = new javax.swing.GroupLayout(espacio);
-        espacio.setLayout(espacioLayout);
-        espacioLayout.setHorizontalGroup(
-            espacioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 130, Short.MAX_VALUE)
-        );
-        espacioLayout.setVerticalGroup(
-            espacioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 20, Short.MAX_VALUE)
-        );
-
-        MenuIconos.add(espacio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, 20));
-
-        PnOcultarMenu.setBackground(new java.awt.Color(255, 197, 45));
-        PnOcultarMenu.setPreferredSize(new java.awt.Dimension(10, 32));
-        PnOcultarMenu.setLayout(new java.awt.BorderLayout());
-
-        btnOcultar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnOcultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/menor.png"))); // NOI18N
-        btnOcultar.setIconTextGap(10);
-        btnOcultar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnOcultarMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnOcultarMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnOcultarMouseExited(evt);
-            }
-        });
-        PnOcultarMenu.add(btnOcultar, java.awt.BorderLayout.CENTER);
-
-        MenuIconos.add(PnOcultarMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 300, 70));
+        jPanel1.setBackground(new java.awt.Color(255, 197, 45));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnSeleccion1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -274,14 +228,14 @@ public class Home extends javax.swing.JFrame {
         pnSeleccion1.setLayout(pnSeleccion1Layout);
         pnSeleccion1Layout.setHorizontalGroup(
             pnSeleccion1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 280, Short.MAX_VALUE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
         pnSeleccion1Layout.setVerticalGroup(
             pnSeleccion1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 10, Short.MAX_VALUE)
         );
 
-        MenuIconos.add(pnSeleccion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 280, 10));
+        jPanel1.add(pnSeleccion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 300, 10));
 
         pnSeleccion2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -296,7 +250,7 @@ public class Home extends javax.swing.JFrame {
             .addGap(0, 10, Short.MAX_VALUE)
         );
 
-        MenuIconos.add(pnSeleccion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 310, -1));
+        jPanel1.add(pnSeleccion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 310, 10));
 
         pnSeleccion3.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -304,61 +258,14 @@ public class Home extends javax.swing.JFrame {
         pnSeleccion3.setLayout(pnSeleccion3Layout);
         pnSeleccion3Layout.setHorizontalGroup(
             pnSeleccion3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 330, Short.MAX_VALUE)
+            .addGap(0, 310, Short.MAX_VALUE)
         );
         pnSeleccion3Layout.setVerticalGroup(
             pnSeleccion3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 10, Short.MAX_VALUE)
         );
 
-        MenuIconos.add(pnSeleccion3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 330, -1));
-
-        BtnProducto.setFont(new java.awt.Font("Arial", 1, 28)); // NOI18N
-        BtnProducto.setForeground(new java.awt.Color(255, 255, 255));
-        BtnProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/caja.png"))); // NOI18N
-        BtnProducto.setText("Productos");
-        BtnProducto.setContentAreaFilled(false);
-        BtnProducto.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BtnProducto.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        BtnProducto.setIconTextGap(40);
-        BtnProducto.setInheritsPopupMenu(true);
-        BtnProducto.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                BtnProductoMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                BtnProductoMouseExited(evt);
-            }
-        });
-        BtnProducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnProductoActionPerformed(evt);
-            }
-        });
-        MenuIconos.add(BtnProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 300, 110));
-
-        BtnCliente.setFont(new java.awt.Font("Arial", 1, 28)); // NOI18N
-        BtnCliente.setForeground(new java.awt.Color(255, 255, 255));
-        BtnCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cliente.png"))); // NOI18N
-        BtnCliente.setText("Cliente");
-        BtnCliente.setContentAreaFilled(false);
-        BtnCliente.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BtnCliente.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        BtnCliente.setIconTextGap(45);
-        BtnCliente.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                BtnClienteMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                BtnClienteMouseExited(evt);
-            }
-        });
-        BtnCliente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnClienteActionPerformed(evt);
-            }
-        });
-        MenuIconos.add(BtnCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 300, 110));
+        jPanel1.add(pnSeleccion3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, 310, 10));
 
         BtnVenta.setBackground(new java.awt.Color(102, 102, 0));
         BtnVenta.setFont(new java.awt.Font("Arial", 1, 28)); // NOI18N
@@ -382,9 +289,90 @@ public class Home extends javax.swing.JFrame {
                 BtnVentaActionPerformed(evt);
             }
         });
-        MenuIconos.add(BtnVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 300, 100));
+        jPanel1.add(BtnVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, 300, 100));
+
+        BtnProducto.setFont(new java.awt.Font("Arial", 1, 28)); // NOI18N
+        BtnProducto.setForeground(new java.awt.Color(255, 255, 255));
+        BtnProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/caja.png"))); // NOI18N
+        BtnProducto.setText("Productos");
+        BtnProducto.setContentAreaFilled(false);
+        BtnProducto.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BtnProducto.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        BtnProducto.setIconTextGap(40);
+        BtnProducto.setInheritsPopupMenu(true);
+        BtnProducto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                BtnProductoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                BtnProductoMouseExited(evt);
+            }
+        });
+        BtnProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnProductoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BtnProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 300, 110));
+
+        BtnCliente.setFont(new java.awt.Font("Arial", 1, 28)); // NOI18N
+        BtnCliente.setForeground(new java.awt.Color(255, 255, 255));
+        BtnCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cliente.png"))); // NOI18N
+        BtnCliente.setText("Cliente");
+        BtnCliente.setContentAreaFilled(false);
+        BtnCliente.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BtnCliente.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        BtnCliente.setIconTextGap(45);
+        BtnCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                BtnClienteMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                BtnClienteMouseExited(evt);
+            }
+        });
+        BtnCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnClienteActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BtnCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 300, 110));
+
+        PnOcultarMenu.setBackground(new java.awt.Color(255, 197, 45));
+        PnOcultarMenu.setPreferredSize(new java.awt.Dimension(10, 32));
+        PnOcultarMenu.setLayout(new java.awt.BorderLayout());
+
+        btnOcultar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnOcultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/menor.png"))); // NOI18N
+        btnOcultar.setIconTextGap(10);
+        btnOcultar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnOcultarMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnOcultarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnOcultarMouseExited(evt);
+            }
+        });
+        PnOcultarMenu.add(btnOcultar, java.awt.BorderLayout.LINE_START);
+
+        jPanel1.add(PnOcultarMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 0, 300, 70));
+
+        MenuIconos.add(jPanel1, java.awt.BorderLayout.LINE_END);
 
         Menu.add(MenuIconos, java.awt.BorderLayout.CENTER);
+
+        pnLogo.setBackground(new java.awt.Color(255, 197, 45));
+        pnLogo.setPreferredSize(new java.awt.Dimension(50, 50));
+        pnLogo.setLayout(new java.awt.BorderLayout());
+
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/logo-blanco.png"))); // NOI18N
+        pnLogo.add(jLabel6, java.awt.BorderLayout.CENTER);
+
+        Menu.add(pnLogo, java.awt.BorderLayout.PAGE_END);
 
         getContentPane().add(Menu, java.awt.BorderLayout.LINE_START);
 
@@ -397,7 +385,7 @@ public class Home extends javax.swing.JFrame {
 
         getContentPane().add(Padre, java.awt.BorderLayout.CENTER);
 
-        setSize(new java.awt.Dimension(1593, 847));
+        setSize(new java.awt.Dimension(1593, 857));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -580,9 +568,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel btnMin;
     private javax.swing.JLabel btnOcultar;
     private javax.swing.JDesktopPane escritorio;
-    private javax.swing.JPanel espacio;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel pnCerrar;
     private javax.swing.JPanel pnLogo;

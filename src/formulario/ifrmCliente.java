@@ -302,7 +302,7 @@ frame.getRootPane().setWindowDecorationStyle(JRootPane.NONE);
                 txtBuscarKeyReleased(evt);
             }
         });
-        jPanel2.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 670, 30));
+        jPanel2.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 490, 30));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/buscar.png"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));

@@ -129,7 +129,7 @@ public class iFrmProductoE extends javax.swing.JInternalFrame {
                 txtBuscarKeyReleased(evt);
             }
         });
-        jPanel3.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 670, 30));
+        jPanel3.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 600, 30));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/buscar.png"))); // NOI18N
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, -1, -1));
