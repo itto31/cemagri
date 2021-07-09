@@ -30,7 +30,8 @@ public class Home extends javax.swing.JFrame {
          private iFrmProductoE pro;
     boolean a=true;
     public Home() {
-        initComponents();       
+        initComponents();    
+         this.setExtendedState(Home.MAXIMIZED_BOTH);
     }
     
      //Metodo para cambiar el color de los paneles 
