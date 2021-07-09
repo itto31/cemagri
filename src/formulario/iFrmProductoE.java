@@ -332,7 +332,7 @@ buscarProducto();
       nombre= String.valueOf(tblProducto.getModel().getValueAt(tblProducto.getSelectedRow(), 2));
       cantidad =String.valueOf(tblProducto.getModel().getValueAt(tblProducto.getSelectedRow(), 4));
        precio = String.valueOf(tblProducto.getModel().getValueAt(tblProducto.getSelectedRow(), 5));
-       categoria = String.valueOf(tblProducto.getModel().getValueAt(tblProducto.getSelectedRow(), 6));
+       categoria = String.valueOf(tblProducto.getModel().getValueAt(tblProducto.getSelectedRow(), 7));
        
        }
        else{

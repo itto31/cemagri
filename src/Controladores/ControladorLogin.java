@@ -11,7 +11,6 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -21,10 +20,13 @@ import javax.swing.JOptionPane;
 public class ControladorLogin {
   private Connection con = new conexionSQL().conexion();
   
-   public int looo(String string, String string1, String string2) throws SQLException {
+   public int looo(LoginVista l, String rol) throws SQLException {
              int rsñ = 0;           
         try {                      
-            CallableStatement a = con.prepareCall("{call Login_Register ('"+string+"','"+string1+"','"+string2+"')}");
+            CallableStatement a = con.prepareCall("call Login_Register (?,?,?)");
+             a.setString("nombre",l.getLog_Nombre());
+              a.setString("pass",l.getLog_Contrasena());
+              a.setString("rol",rol);
             ResultSet rs = a.executeQuery();
               while(rs.next()){    
               rsñ = rs.getInt(1);    

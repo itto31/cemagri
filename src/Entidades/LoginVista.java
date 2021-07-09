@@ -12,7 +12,7 @@ package Entidades;
 public class LoginVista {
     int log_Codigo;
     String log_Nombre;
-    String log_Contraseña;
+    String log_Contrasena;
     String rol_nombre;
 
     public int getLog_Codigo() {
@@ -31,12 +31,12 @@ public class LoginVista {
         this.log_Nombre = log_Nombre;
     }
 
-    public String getLog_Contraseña() {
-        return log_Contraseña;
+    public String getLog_Contrasena() {
+        return log_Contrasena;
     }
 
-    public void setLog_Contraseña(String log_Contraseña) {
-        this.log_Contraseña = log_Contraseña;
+    public void setLog_Contraseña(String log_Contrasena) {
+        this.log_Contrasena = log_Contrasena;
     }
 
     public String getRol_nombre() {
@@ -52,14 +52,14 @@ public class LoginVista {
 
     public LoginVista(String log_Nombre, String log_Contraseña, String rol_nombre) {
         this.log_Nombre = log_Nombre;
-        this.log_Contraseña = log_Contraseña;
+        this.log_Contrasena = log_Contrasena;
         this.rol_nombre = rol_nombre;
     }
 
     public LoginVista(int log_Codigo, String log_Nombre, String log_Contraseña, String rol_nombre) {
         this.log_Codigo = log_Codigo;
         this.log_Nombre = log_Nombre;
-        this.log_Contraseña = log_Contraseña;
+        this.log_Contrasena = log_Contrasena;
         this.rol_nombre = rol_nombre;
     }
     
